@@ -172,6 +172,8 @@ class LayoutPage extends StatelessWidget {
           const SizedBox(height: 12),
 
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               _coloredBlock('Block A', Colors.teal.shade400),
               const SizedBox(width: 8),
@@ -179,7 +181,8 @@ class LayoutPage extends StatelessWidget {
               const SizedBox(width: 8),
               _coloredBlock('Block C', Colors.teal.shade600),
             ],
-          ),
+          )
+
         ],
       ),
     );
@@ -210,7 +213,6 @@ class InfoCard extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Номер элемента
           CircleAvatar(
             radius: 14,
             backgroundColor: Colors.deepPurple,
@@ -221,7 +223,6 @@ class InfoCard extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 12),
-          // Текст элемента
           Expanded(
             child: Text(
               text,
